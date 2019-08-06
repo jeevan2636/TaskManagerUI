@@ -1,0 +1,52 @@
+<div style="padding:20px;">
+<form>
+  <!-- Adding label and textbox(Task) -->
+  <div class="form-group row">
+    <label for="" class="col-sm-2 col-form-label">Task</label>
+    <div class="mx-sm-3">
+        <input name="TaskName" class="form-control">
+      </div>
+  </div>
+  <!-- Adding label and textbox(Task) -->
+  <div class="form-group row">
+      <label for="" class="col-sm-2 col-form-label">Priority</label>
+      <div class="mx-sm-3">
+          <input name="Priority" type="range" min="0" max="30" value="1" step="5"  class="slider">
+        </div>
+  </div>
+
+  <div class="form-group row">
+      <label for="" class="col-sm-2 col-form-label">Parent Task</label>
+      <div class="mx-sm-3">
+          <input name="TaskName" class="form-control">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="" class="col-sm-2 col-form-label">Start Date</label>
+        <div class="mx-sm-3">
+            <input name="TaskName" class="form-control">
+          </div>
+      </div>
+      <div class="form-group row">
+          <label for="" class="col-sm-2 col-form-label">End Date</label>
+          <div class="mx-sm-3">
+              <input name="TaskName" class="form-control">
+            </div>
+        </div>
+
+       <div class="form-group row">
+         <div class="col-sm-2"></div>
+         <div class="mx-sm-3">
+          <button type="submit" class="btn btn-primary">
+          {{taskservice.taskBTN}}  
+          </button>   
+        </div>
+         <div class="mx-sm-3"> 
+            <button type="submit" class="btn btn-primary">Reset </button>
+         </div>
+
+       </div> 
+  </form>  
+
+
+</div>

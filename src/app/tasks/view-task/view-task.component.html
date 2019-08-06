@@ -1,0 +1,179 @@
+<div style="padding:20px">
+    <div class="form-group row">
+        <label class="mx-sm-2 col-form-label">Task:</label>
+        <div class="col-md-5">
+            <input name="TaskName" class="form-control">
+        </div>
+        <label class="mx-sm-2 col-form-label">Parent Task:</label>
+        <div class="col-md-5">
+            <input name="Parent_Task" class="form-control">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label class="mx-sm-1 col-form-label">Priority From:</label>
+        <div class="mx-sm-1">
+            <input name="PriorityFrom" class="form-control">
+        </div>
+        <label class="mx-sm-1 col-form-label">Priority To:</label>
+        <div class="mx-sm-2">
+            <input name="PriorityTo" class="form-control">
+        </div>
+        <label class="mx-sm-1 col-form-label">Start Date:</label>
+        <div class="mx-sm-2">
+            <input name="Start_Date" class="form-control">
+        </div>
+        <label class="mx-sm-1 col-form-label">End Date:</label>
+        <div class="mx-sm-2">
+            <input name="End_Date" class="form-control">
+        </div>
+        <div class="mx-sm-2">
+            <button type="button" class="btn btn-primary">Search</button>
+        </div>
+    </div>
+    <hr style="border:1px dotted lightslategray">
+    <div class="form-row table table-primary">
+        <div class="form-group col-md-2">
+            <label>Task</label><br>
+            Task1
+        </div>
+        <div class="form-group col-md-2">
+            <label>Parent</label><br>
+            ParenTask1
+        </div>
+        <div class="form-group col-md-2">
+            <label>Priority</label><br>
+            10
+        </div>
+        <div class="form-group col-md-2">
+            <label>Start</label><br>
+            10-01-2018
+        </div>
+        <div class="form-group col-md-2">
+            <label>End</label><br>
+            10-15-2018
+        </div>
+        <div class="form-group col-md-2">
+            <label></label>
+            <div>
+                <button type="button" (click)="editTask()" class="btn btn-primary">Edit</button>&nbsp;
+                <button type="button" class="btn btn-primary">End Task</button>
+            </div>
+        </div>
+    </div>
+    <div class="form-row table table-primary">
+        <div class="form-group col-md-2">
+            <label>Task</label><br>
+            Task2
+        </div>
+        <div class="form-group col-md-2">
+            <label>Parent</label><br>
+            ParenTask2
+        </div>
+        <div class="form-group col-md-2">
+            <label>Priority</label><br>
+            10
+        </div>
+        <div class="form-group col-md-2">
+            <label>Start</label><br>
+            1-01-2018
+        </div>
+        <div class="form-group col-md-2">
+            <label>End</label><br>
+            1-15-2018
+        </div>
+        <div class="form-group col-md-2">
+            <label></label>
+            <div>
+                <button type="button" (click)="editTask(t)" class="btn btn-primary">Edit</button>&nbsp;
+                <button type="button" class="btn btn-primary">End Task</button>
+            </div>
+        </div>
+    </div>
+    <div class="form-row table table-primary">
+        <div class="form-group col-md-2">
+            <label>Task</label><br>
+            Task3
+        </div>
+        <div class="form-group col-md-2">
+            <label>Parent</label><br>
+            ParenTask3
+        </div>
+        <div class="form-group col-md-2">
+            <label>Priority</label><br>
+            9
+        </div>
+        <div class="form-group col-md-2">
+            <label>Start</label><br>
+            9-01-2018
+        </div>
+        <div class="form-group col-md-2">
+            <label>End</label><br>
+            9-15-2018
+        </div>
+        <div class="form-group col-md-2">
+            <label></label>
+            <div>
+                <button type="button" (click)="editTask(t)" class="btn btn-primary">Edit</button>&nbsp;
+                <button type="button" class="btn btn-primary">End Task</button>
+            </div>
+        </div>
+    </div>
+    <div class="form-row table table-primary">
+        <div class="form-group col-md-2">
+            <label>Task</label><br>
+            Task4
+        </div>
+        <div class="form-group col-md-2">
+            <label>Parent</label><br>
+            ParenTask4
+        </div>
+        <div class="form-group col-md-2">
+            <label>Priority</label><br>
+            7
+        </div>
+        <div class="form-group col-md-2">
+            <label>Start</label><br>
+            8-01-2018
+        </div>
+        <div class="form-group col-md-2">
+            <label>End</label><br>
+            8-15-2018
+        </div>
+        <div class="form-group col-md-2">
+            <label></label>
+            <div>
+                <button type="button" (click)="editTask(t)" class="btn btn-primary">Edit</button>&nbsp;
+                <button type="button" class="btn btn-primary">End Task</button>
+            </div>
+        </div>
+    </div>
+    <div class="form-row table table-primary">
+        <div class="form-group col-md-2">
+            <label>Task</label><br>
+            Task5
+        </div>
+        <div class="form-group col-md-2">
+            <label>Parent</label><br>
+            ParenTask5
+        </div>
+        <div class="form-group col-md-2">
+            <label>Priority</label><br>
+            4
+        </div>
+        <div class="form-group col-md-2">
+            <label>Start</label><br>
+            4-01-2018
+        </div>
+        <div class="form-group col-md-2">
+            <label>End</label><br>
+            5-15-2018
+        </div>
+        <div class="form-group col-md-2">
+            <label></label>
+            <div>
+                <button type="button" (click)="editTask(t)" class="btn btn-primary">Edit</button>&nbsp;
+                <button type="button" class="btn btn-primary">End Task</button>
+            </div>
+        </div>
+    </div>
+</div>

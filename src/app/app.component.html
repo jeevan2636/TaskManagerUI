@@ -1,0 +1,27 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+     {{ title }}
+  </h1>
+<nav mat-tab-nav-bar>
+<a mat-tab-link
+*ngFor="let routelink of routelinks; let i=index;"
+[routerLink]="routelink.link"
+routerLinkActive="mat-tab-link-active"
+#rla="routerLinkActive"
+(click)="activeLinkIndex= i"
+[routerLinkActiveOptions]="{exact: true}"
+>
+{{routelink.label}}
+
+</a>
+
+</nav> 
+</div>
+
+
+<router-outlet>
+
+
+
+</router-outlet>
